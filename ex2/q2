@@ -1,0 +1,14 @@
+SELECT year, plan_type, total_revenue
+FROM (
+    SELECT 
+        EXTRACT(YEAR FROM p.payment_date) AS year,
+        sp.plan_type,
+        SUM(p.amount) AS total_revenue,
+        RANK() OVER (PARTITION BY EXTRACT(YEAR FROM p.payment_date) ORDER BY SUM(p.amount) DESC) AS rnk
+    FROM Payments p
+    JOIN Subscriptions s ON p.subscription_id = s.subscription_id
+    JOIN Subscription_Plans sp ON s.plan_id = sp.plan_id
+    GROUP BY year, sp.plan_type
+) AS ranked
+WHERE rnk = 1
+ORDER BY year;

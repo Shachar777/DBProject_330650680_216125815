@@ -1,0 +1,17 @@
+SELECT
+  sp.country,
+  SUM(p.amount)                            AS total_payments,
+  COALESCE(SUM(r.refund_amount), 0)        AS total_refunds,
+  (SUM(p.amount) - COALESCE(SUM(r.refund_amount), 0)) AS net_revenue,
+  ROUND(
+    CASE 
+      WHEN SUM(p.amount) = 0 THEN 0
+      ELSE COALESCE(SUM(r.refund_amount), 0) / SUM(p.amount) * 100
+    END
+  , 2)                                     AS refund_rate_pct
+FROM subscription_plans sp
+  JOIN subscriptions s ON sp.plan_id = s.plan_id
+  JOIN payments p        ON s.subscription_id = p.subscription_id
+  LEFT JOIN refunds r    ON p.payment_id = r.payment_id
+GROUP BY sp.country
+ORDER BY net_revenue DESC;

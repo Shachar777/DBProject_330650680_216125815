@@ -1,0 +1,8 @@
+BEGIN;
+UPDATE payments p
+SET amount = ROUND(p.amount * (1 - d.discount_percent / 100.0), 2)
+FROM subscriptions s
+JOIN discounts d ON s.discount_id = d.discount_id
+WHERE p.subscription_id = s.subscription_id
+  AND d.valid_until >= CURRENT_DATE;
+ROLLBACK;

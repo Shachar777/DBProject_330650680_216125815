@@ -1,0 +1,6 @@
+BEGIN;
+UPDATE transactions
+SET status = 'Failed'
+WHERE status = 'Pending'
+  AND transaction_date < CURRENT_DATE - INTERVAL '7 days';
+ROLLBACK;

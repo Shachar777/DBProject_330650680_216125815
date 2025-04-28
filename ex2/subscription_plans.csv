@@ -1,0 +1,1001 @@
+plan_id,country,plan_type,monthly_cost,device_limit
+1,New Zealand,student,4.71,10
+2,Kazakhstan,basic,7.51,7
+3,Uruguay,standard,10.04,5
+4,Chile,student,2.46,1
+5,Uzbekistan,standard,11.8,6
+6,Croatia,basic,7.86,6
+7,Cuba,premium,14.76,2
+8,Malaysia,premium,14.6,7
+9,Philippines,student,4.0,5
+10,Peru,standard,9.8,4
+11,Romania,student,4.98,3
+12,Costa Rica,premium,17.89,7
+13,Peru,basic,6.86,5
+14,Vietnam,standard,9.84,7
+15,Paraguay,premium,14.37,8
+16,Serbia,student,4.55,4
+17,Kazakhstan,student,2.46,3
+18,Nicaragua,basic,4.88,5
+19,Kazakhstan,premium,15.84,2
+20,China,premium,17.88,4
+21,Egypt,standard,11.87,1
+22,Chile,standard,11.78,8
+23,Costa Rica,basic,4.99,8
+24,Romania,standard,10.68,7
+25,Nepal,student,4.98,4
+26,Norway,basic,7.5,2
+27,Bulgaria,standard,11.86,3
+28,Ethiopia,student,3.29,1
+29,Colombia,standard,12.61,2
+30,Ireland,standard,11.69,8
+31,Jamaica,premium,14.11,8
+32,Costa Rica,student,4.64,9
+33,Slovenia,standard,12.83,8
+34,Slovenia,premium,14.39,4
+35,Honduras,premium,15.65,9
+36,Sri Lanka,standard,10.19,5
+37,Serbia,basic,4.22,5
+38,China,premium,17.88,6
+39,New Zealand,basic,4.27,3
+40,Denmark,standard,10.83,7
+41,Zimbabwe,standard,9.45,4
+42,Germany,student,3.65,7
+43,Saudi Arabia,student,3.7,7
+44,France,standard,11.4,7
+45,Greece,basic,6.19,10
+46,Iraq,student,4.57,1
+47,Jordan,premium,18.91,7
+48,Romania,standard,10.68,8
+49,Kenya,premium,18.55,7
+50,Sri Lanka,basic,6.68,7
+51,UAE,student,2.56,3
+52,Iceland,standard,9.97,10
+53,Armenia,basic,6.64,7
+54,Bolivia,basic,7.61,2
+55,El Salvador,student,2.79,3
+56,Iceland,standard,9.97,1
+57,India,student,3.45,6
+58,Nigeria,student,2.78,6
+59,UAE,student,2.56,5
+60,Romania,premium,18.78,2
+61,Singapore,basic,5.67,9
+62,UK,premium,14.45,4
+63,Guatemala,basic,7.14,1
+64,Brazil,standard,9.79,4
+65,Mexico,standard,9.11,4
+66,Poland,student,2.09,2
+67,Venezuela,standard,10.1,8
+68,Ethiopia,premium,14.53,6
+69,Russia,basic,5.59,3
+70,Australia,basic,5.34,10
+71,Brazil,premium,17.24,10
+72,Trinidad and Tobago,student,2.83,7
+73,Egypt,basic,4.04,10
+74,Zimbabwe,standard,9.45,2
+75,Ethiopia,premium,14.53,10
+76,Austria,basic,7.95,6
+77,Armenia,student,2.34,6
+78,Germany,premium,15.88,1
+79,Romania,student,4.98,2
+80,Croatia,premium,16.7,8
+81,Denmark,student,2.73,3
+82,Uzbekistan,premium,17.05,10
+83,Armenia,student,2.34,8
+84,Croatia,premium,16.7,6
+85,Japan,basic,3.99,5
+86,Slovenia,standard,12.83,8
+87,Venezuela,student,4.3,6
+88,Brazil,student,3.62,6
+89,Turkey,student,3.13,4
+90,Jordan,premium,18.91,6
+91,Indonesia,premium,15.32,9
+92,Canada,standard,11.7,2
+93,China,student,3.58,8
+94,Colombia,standard,12.61,8
+95,El Salvador,student,2.79,8
+96,Mexico,basic,5.68,5
+97,Kenya,student,4.6,4
+98,Australia,premium,15.14,8
+99,Peru,premium,17.16,7
+100,Peru,premium,17.16,6
+101,Ethiopia,student,3.29,5
+102,Australia,premium,15.14,4
+103,Austria,standard,11.55,6
+104,Austria,standard,11.55,4
+105,Nigeria,student,2.78,5
+106,Bolivia,premium,18.16,2
+107,Israel,premium,18.85,4
+108,Lebanon,standard,10.35,5
+109,Canada,standard,11.7,5
+110,Chile,basic,7.21,9
+111,Thailand,standard,10.24,8
+112,Belgium,basic,5.06,10
+113,Vietnam,student,4.18,8
+114,Serbia,premium,16.5,3
+115,UK,premium,14.45,8
+116,Switzerland,basic,4.67,7
+117,Sri Lanka,basic,6.68,10
+118,Dominican Republic,basic,7.45,3
+119,Denmark,premium,15.31,2
+120,Japan,basic,3.99,9
+121,Romania,standard,10.68,9
+122,Iraq,student,4.57,8
+123,Malaysia,student,2.66,5
+124,Venezuela,basic,5.68,10
+125,Netherlands,standard,10.45,4
+126,India,basic,7.5,3
+127,China,standard,11.15,9
+128,Italy,standard,11.46,1
+129,Slovakia,student,4.34,10
+130,Singapore,premium,16.6,1
+131,Morocco,premium,17.03,5
+132,Ethiopia,student,3.29,2
+133,Bahamas,standard,10.59,5
+134,Dominican Republic,standard,12.89,7
+135,Switzerland,standard,11.91,3
+136,Pakistan,standard,12.03,2
+137,France,standard,11.4,5
+138,Ecuador,premium,15.53,8
+139,Austria,student,4.04,5
+140,Ethiopia,student,3.29,5
+141,Afghanistan,student,4.79,8
+142,Spain,basic,6.81,7
+143,Philippines,premium,15.18,1
+144,Portugal,standard,9.92,10
+145,Bolivia,basic,7.61,5
+146,Uruguay,basic,6.54,3
+147,Singapore,student,4.79,5
+148,Turkey,student,3.13,8
+149,Portugal,student,2.82,6
+150,Slovakia,premium,15.32,6
+151,Jamaica,basic,7.17,3
+152,Saudi Arabia,student,3.7,8
+153,Vietnam,student,4.18,9
+154,Argentina,student,2.01,2
+155,New Zealand,premium,15.13,6
+156,Switzerland,student,3.13,9
+157,USA,student,2.66,7
+158,UK,standard,10.34,9
+159,Lebanon,student,2.74,8
+160,UK,standard,10.34,5
+161,Peru,standard,9.8,5
+162,Serbia,student,4.55,2
+163,Brazil,standard,9.79,3
+164,Australia,basic,5.34,9
+165,Slovakia,basic,5.51,4
+166,Switzerland,student,3.13,2
+167,El Salvador,standard,12.45,8
+168,Thailand,premium,18.97,7
+169,Bangladesh,student,3.18,4
+170,Ireland,standard,11.69,7
+171,Israel,standard,11.11,2
+172,Indonesia,student,4.61,6
+173,Afghanistan,premium,15.32,1
+174,Vietnam,premium,16.69,10
+175,Paraguay,student,4.64,3
+176,Slovenia,student,2.55,6
+177,Saudi Arabia,student,3.7,8
+178,Philippines,standard,9.27,4
+179,Uruguay,student,3.65,4
+180,Slovakia,basic,5.51,6
+181,Singapore,student,4.79,7
+182,Nicaragua,standard,12.26,8
+183,Argentina,standard,11.35,9
+184,Bolivia,premium,18.16,2
+185,Serbia,basic,4.22,9
+186,Ireland,basic,6.37,3
+187,Slovakia,standard,12.93,2
+188,Singapore,premium,16.6,6
+189,Cuba,student,4.78,2
+190,Saudi Arabia,student,3.7,6
+191,Dominican Republic,student,4.63,9
+192,Argentina,basic,4.87,4
+193,Dominican Republic,premium,18.04,4
+194,Portugal,student,2.82,2
+195,Honduras,basic,4.09,8
+196,Russia,premium,18.98,1
+197,Chile,premium,15.69,1
+198,Thailand,premium,18.97,6
+199,Croatia,standard,11.31,4
+200,Georgia,student,2.89,10
+201,Bahamas,standard,10.59,3
+202,Ukraine,basic,4.35,10
+203,Iraq,standard,12.68,8
+204,Paraguay,standard,9.03,4
+205,Iceland,premium,16.96,8
+206,South Korea,basic,7.5,8
+207,Vietnam,standard,9.84,2
+208,Serbia,premium,16.5,10
+209,Malaysia,student,2.66,5
+210,Ireland,premium,15.17,4
+211,Greece,student,4.5,2
+212,China,student,3.58,10
+213,Jordan,premium,18.91,5
+214,Mexico,student,3.51,5
+215,Canada,basic,6.94,10
+216,Nepal,premium,18.98,4
+217,Panama,premium,18.48,4
+218,Honduras,standard,11.94,10
+219,South Korea,standard,12.32,2
+220,Dominican Republic,basic,7.45,5
+221,Serbia,basic,4.22,10
+222,Lebanon,standard,10.35,2
+223,Thailand,premium,18.97,7
+224,Ukraine,standard,9.18,3
+225,Azerbaijan,premium,15.35,9
+226,Afghanistan,premium,15.32,3
+227,South Korea,student,2.16,5
+228,UAE,basic,5.88,8
+229,Italy,standard,11.46,4
+230,Trinidad and Tobago,student,2.83,9
+231,Lebanon,basic,5.6,7
+232,Canada,premium,18.45,9
+233,Austria,student,4.04,6
+234,Trinidad and Tobago,premium,18.82,10
+235,Iraq,premium,16.21,2
+236,Trinidad and Tobago,standard,12.45,8
+237,Brazil,premium,17.24,10
+238,Kenya,basic,5.99,8
+239,Ethiopia,premium,14.53,7
+240,Switzerland,standard,11.91,1
+241,Argentina,premium,18.04,8
+242,Switzerland,basic,4.67,4
+243,Armenia,standard,12.75,7
+244,Ireland,premium,15.17,9
+245,Romania,standard,10.68,7
+246,Guatemala,basic,7.14,8
+247,Costa Rica,student,4.64,5
+248,Argentina,premium,18.04,4
+249,Serbia,student,4.55,4
+250,Lebanon,basic,5.6,6
+251,Azerbaijan,premium,15.35,1
+252,Hungary,premium,18.23,4
+253,Austria,student,4.04,2
+254,Nicaragua,standard,12.26,10
+255,Mexico,basic,5.68,6
+256,Japan,standard,10.29,10
+257,South Africa,basic,5.06,9
+258,South Africa,standard,11.55,4
+259,Saudi Arabia,standard,9.52,10
+260,USA,premium,15.37,3
+261,Poland,premium,15.14,3
+262,Switzerland,basic,4.67,3
+263,Canada,premium,18.45,4
+264,Bolivia,premium,18.16,1
+265,Ukraine,premium,14.54,1
+266,Poland,student,2.09,9
+267,Switzerland,basic,4.67,8
+268,Slovenia,premium,14.39,9
+269,Bolivia,basic,7.61,8
+270,Afghanistan,standard,9.84,10
+271,Chile,premium,15.69,8
+272,El Salvador,basic,7.2,1
+273,Bangladesh,student,3.18,7
+274,Bahamas,basic,6.56,8
+275,Serbia,basic,4.22,2
+276,Philippines,standard,9.27,2
+277,Poland,premium,15.14,10
+278,Honduras,premium,15.65,7
+279,Ecuador,premium,15.53,8
+280,Afghanistan,student,4.79,2
+281,Ethiopia,basic,7.84,9
+282,Nigeria,student,2.78,8
+283,Morocco,student,2.45,6
+284,Ireland,student,2.35,7
+285,Netherlands,premium,15.84,7
+286,New Zealand,premium,15.13,6
+287,Denmark,student,2.73,2
+288,Portugal,basic,4.31,2
+289,Croatia,basic,7.86,6
+290,Poland,basic,7.36,10
+291,Colombia,premium,18.22,2
+292,Slovakia,premium,15.32,7
+293,UK,premium,14.45,10
+294,Australia,premium,15.14,2
+295,Uruguay,standard,10.04,3
+296,Nicaragua,student,2.91,4
+297,Belgium,premium,17.23,9
+298,Iran,basic,4.75,5
+299,Uruguay,standard,10.04,7
+300,Colombia,basic,5.94,10
+301,Nicaragua,premium,16.29,1
+302,Turkey,premium,14.31,5
+303,UAE,premium,18.03,1
+304,Turkey,standard,10.68,10
+305,Nicaragua,student,2.91,2
+306,Norway,basic,7.5,2
+307,Georgia,standard,9.02,7
+308,Romania,student,4.98,6
+309,Finland,premium,16.91,5
+310,Philippines,basic,7.43,1
+311,Denmark,standard,10.83,10
+312,UK,basic,7.82,5
+313,Serbia,student,4.55,8
+314,Panama,student,2.62,7
+315,Pakistan,standard,12.03,9
+316,Switzerland,premium,14.81,7
+317,Switzerland,premium,14.81,10
+318,Sri Lanka,premium,15.57,1
+319,Kenya,student,4.6,10
+320,France,basic,7.38,4
+321,Malaysia,standard,11.06,3
+322,South Korea,premium,15.53,6
+323,Austria,basic,7.95,8
+324,Croatia,standard,11.31,3
+325,Iraq,standard,12.68,9
+326,Colombia,premium,18.22,2
+327,Hungary,basic,7.87,7
+328,Mexico,student,3.51,2
+329,New Zealand,student,4.71,10
+330,Czech Republic,student,2.17,5
+331,Switzerland,student,3.13,1
+332,Philippines,standard,9.27,10
+333,Ireland,premium,15.17,2
+334,Croatia,basic,7.86,4
+335,Croatia,student,4.23,9
+336,Spain,student,2.86,5
+337,UAE,standard,12.13,6
+338,Russia,basic,5.59,9
+339,Honduras,basic,4.09,9
+340,Kazakhstan,standard,12.51,6
+341,Qatar,standard,10.71,4
+342,Belgium,standard,12.74,5
+343,Egypt,standard,11.87,10
+344,Denmark,basic,7.65,3
+345,Dominican Republic,student,4.63,8
+346,Venezuela,student,4.3,10
+347,El Salvador,premium,18.04,6
+348,Denmark,student,2.73,2
+349,Singapore,student,4.79,5
+350,Indonesia,basic,5.89,6
+351,Afghanistan,basic,4.28,5
+352,Iceland,student,3.85,1
+353,France,premium,18.03,5
+354,Italy,basic,7.31,10
+355,Ecuador,student,4.69,8
+356,Paraguay,basic,5.7,8
+357,Uruguay,standard,10.04,6
+358,Panama,student,2.62,9
+359,Denmark,basic,7.65,8
+360,Belgium,premium,17.23,2
+361,Afghanistan,standard,9.84,1
+362,Japan,student,4.78,8
+363,Georgia,standard,9.02,6
+364,Iran,premium,16.1,7
+365,Slovakia,premium,15.32,10
+366,UK,premium,14.45,2
+367,Saudi Arabia,basic,4.85,9
+368,Trinidad and Tobago,student,2.83,5
+369,South Korea,standard,12.32,6
+370,Spain,standard,9.17,6
+371,Australia,student,2.65,3
+372,Ecuador,basic,4.58,5
+373,Colombia,student,2.27,6
+374,Poland,basic,7.36,7
+375,Kazakhstan,premium,15.84,1
+376,Lebanon,premium,18.3,3
+377,Nigeria,premium,18.37,8
+378,Israel,standard,11.11,3
+379,Denmark,basic,7.65,5
+380,Netherlands,basic,6.53,6
+381,Cuba,standard,11.47,10
+382,Iraq,standard,12.68,3
+383,Turkey,standard,10.68,8
+384,Chile,student,2.46,6
+385,Trinidad and Tobago,standard,12.45,8
+386,Costa Rica,premium,17.89,8
+387,Morocco,standard,11.55,5
+388,Singapore,standard,11.32,6
+389,Trinidad and Tobago,student,2.83,8
+390,Vietnam,student,4.18,9
+391,Georgia,student,2.89,3
+392,Egypt,standard,11.87,5
+393,UK,student,2.28,6
+394,Peru,basic,6.86,9
+395,Austria,premium,16.77,2
+396,Finland,premium,16.91,8
+397,Kazakhstan,standard,12.51,7
+398,Portugal,standard,9.92,8
+399,Qatar,basic,4.38,7
+400,UK,student,2.28,9
+401,Iran,standard,10.78,7
+402,Spain,premium,15.13,4
+403,Brazil,premium,17.24,2
+404,Guatemala,premium,18.35,3
+405,Sweden,basic,5.25,5
+406,Singapore,standard,11.32,8
+407,Slovenia,basic,4.62,2
+408,Mexico,premium,15.08,4
+409,Denmark,student,2.73,2
+410,Vietnam,standard,9.84,5
+411,Austria,basic,7.95,4
+412,Romania,student,4.98,2
+413,Switzerland,student,3.13,10
+414,Armenia,basic,6.64,9
+415,Uruguay,standard,10.04,3
+416,Thailand,student,3.94,1
+417,Costa Rica,premium,17.89,4
+418,Uruguay,student,3.65,3
+419,Jamaica,basic,7.17,9
+420,Lebanon,basic,5.6,9
+421,Azerbaijan,basic,4.42,7
+422,Singapore,basic,5.67,7
+423,Iran,premium,16.1,1
+424,Jordan,basic,6.91,6
+425,China,basic,7.04,10
+426,Saudi Arabia,standard,9.52,1
+427,Jordan,premium,18.91,3
+428,Bahamas,student,3.6,8
+429,Dominican Republic,standard,12.89,3
+430,Germany,student,3.65,1
+431,Thailand,standard,10.24,1
+432,Egypt,basic,4.04,6
+433,Australia,student,2.65,9
+434,Singapore,premium,16.6,1
+435,El Salvador,standard,12.45,5
+436,Jordan,basic,6.91,6
+437,Pakistan,basic,4.27,6
+438,Croatia,student,4.23,8
+439,Greece,premium,18.99,3
+440,Nepal,student,4.98,6
+441,Uzbekistan,premium,17.05,2
+442,Bulgaria,basic,6.21,7
+443,Panama,standard,12.43,9
+444,Thailand,premium,18.97,2
+445,Spain,premium,15.13,5
+446,Australia,student,2.65,10
+447,Bulgaria,standard,11.86,8
+448,Qatar,student,3.39,1
+449,Jordan,student,2.29,5
+450,Honduras,basic,4.09,2
+451,Jamaica,student,2.57,6
+452,Kazakhstan,standard,12.51,1
+453,Norway,student,3.18,1
+454,Poland,basic,7.36,4
+455,El Salvador,premium,18.04,6
+456,Greece,basic,6.19,10
+457,Denmark,student,2.73,6
+458,Iran,student,2.83,2
+459,Uruguay,standard,10.04,9
+460,Lebanon,student,2.74,6
+461,Guatemala,premium,18.35,4
+462,Switzerland,basic,4.67,3
+463,Nepal,student,4.98,9
+464,Austria,premium,16.77,5
+465,Slovenia,standard,12.83,10
+466,Vietnam,student,4.18,4
+467,Austria,standard,11.55,2
+468,Slovenia,standard,12.83,8
+469,Portugal,premium,14.5,6
+470,Germany,premium,15.88,5
+471,Finland,standard,10.04,6
+472,Kazakhstan,standard,12.51,2
+473,Egypt,standard,11.87,4
+474,Nepal,basic,4.28,6
+475,Peru,premium,17.16,8
+476,Peru,standard,9.8,10
+477,Portugal,basic,4.31,5
+478,Hungary,student,2.49,9
+479,Slovakia,student,4.34,10
+480,Italy,standard,11.46,6
+481,El Salvador,basic,7.2,8
+482,Iceland,premium,16.96,3
+483,Peru,standard,9.8,3
+484,Croatia,basic,7.86,2
+485,Uzbekistan,standard,11.8,5
+486,Russia,standard,9.87,6
+487,Kenya,premium,18.55,9
+488,Vietnam,basic,5.68,5
+489,Egypt,premium,17.4,3
+490,Dominican Republic,premium,18.04,10
+491,Armenia,basic,6.64,9
+492,El Salvador,standard,12.45,10
+493,Paraguay,standard,9.03,3
+494,Nicaragua,premium,16.29,10
+495,Chile,basic,7.21,2
+496,Chile,premium,15.69,4
+497,Uruguay,student,3.65,10
+498,Honduras,basic,4.09,8
+499,Dominican Republic,premium,18.04,5
+500,Bangladesh,standard,11.85,7
+501,Malaysia,student,2.66,2
+502,Zimbabwe,basic,7.75,3
+503,Serbia,student,4.55,8
+504,Iceland,standard,9.97,6
+505,Panama,standard,12.43,6
+506,New Zealand,premium,15.13,7
+507,Poland,premium,15.14,9
+508,Colombia,basic,5.94,6
+509,China,student,3.58,2
+510,Pakistan,student,2.38,4
+511,Norway,basic,7.5,1
+512,Thailand,student,3.94,10
+513,Romania,standard,10.68,3
+514,Philippines,premium,15.18,4
+515,Finland,student,4.68,9
+516,Iceland,student,3.85,5
+517,Nepal,basic,4.28,2
+518,Hungary,student,2.49,4
+519,Nigeria,premium,18.37,1
+520,UK,premium,14.45,8
+521,Ecuador,student,4.69,5
+522,Armenia,basic,6.64,2
+523,Croatia,standard,11.31,5
+524,Lebanon,student,2.74,6
+525,Chile,student,2.46,1
+526,Venezuela,standard,10.1,6
+527,Peru,premium,17.16,2
+528,Greece,student,4.5,9
+529,Indonesia,basic,5.89,3
+530,Netherlands,student,2.62,6
+531,UAE,premium,18.03,3
+532,Egypt,student,3.6,9
+533,Chile,basic,7.21,1
+534,Sweden,premium,15.04,8
+535,Uzbekistan,student,4.95,3
+536,Panama,standard,12.43,6
+537,Costa Rica,premium,17.89,3
+538,Hungary,premium,18.23,10
+539,UAE,student,2.56,10
+540,Malaysia,student,2.66,1
+541,Iran,premium,16.1,2
+542,Romania,premium,18.78,1
+543,Ecuador,student,4.69,5
+544,Guatemala,standard,9.42,1
+545,Paraguay,student,4.64,3
+546,Georgia,student,2.89,3
+547,Bahamas,standard,10.59,1
+548,Uruguay,basic,6.54,4
+549,Mexico,student,3.51,6
+550,Romania,standard,10.68,7
+551,Zimbabwe,standard,9.45,7
+552,Afghanistan,student,4.79,1
+553,Sweden,standard,10.06,9
+554,Philippines,student,4.0,9
+555,Iraq,premium,16.21,3
+556,Ireland,premium,15.17,9
+557,Jordan,premium,18.91,10
+558,Bangladesh,standard,11.85,4
+559,Indonesia,premium,15.32,4
+560,Malaysia,premium,14.6,4
+561,Zimbabwe,student,2.53,6
+562,Bangladesh,premium,15.18,9
+563,Indonesia,premium,15.32,2
+564,Uruguay,student,3.65,7
+565,Qatar,standard,10.71,5
+566,Chile,premium,15.69,2
+567,Qatar,student,3.39,5
+568,Bangladesh,standard,11.85,4
+569,Armenia,premium,14.66,9
+570,Ethiopia,premium,14.53,3
+571,Belgium,standard,12.74,4
+572,UK,standard,10.34,4
+573,UK,basic,7.82,7
+574,Saudi Arabia,student,3.7,2
+575,Bahamas,standard,10.59,1
+576,Peru,standard,9.8,7
+577,Guatemala,student,4.57,8
+578,Guatemala,standard,9.42,5
+579,Philippines,premium,15.18,1
+580,Portugal,standard,9.92,9
+581,Argentina,standard,11.35,7
+582,Ukraine,basic,4.35,7
+583,Nepal,standard,10.82,5
+584,Argentina,basic,4.87,5
+585,Venezuela,basic,5.68,6
+586,Vietnam,student,4.18,9
+587,Georgia,student,2.89,3
+588,Afghanistan,student,4.79,5
+589,Israel,basic,7.97,6
+590,Finland,student,4.68,5
+591,Turkey,basic,7.16,6
+592,Thailand,standard,10.24,3
+593,Costa Rica,student,4.64,7
+594,Kazakhstan,premium,15.84,2
+595,Czech Republic,basic,5.93,3
+596,Sweden,student,4.82,6
+597,Japan,basic,3.99,5
+598,Greece,standard,9.19,8
+599,Pakistan,premium,17.82,5
+600,Paraguay,basic,5.7,5
+601,Guatemala,premium,18.35,4
+602,France,basic,7.38,8
+603,Australia,standard,11.34,7
+604,Bahamas,premium,18.9,2
+605,Honduras,premium,15.65,6
+606,Costa Rica,standard,9.4,4
+607,Sweden,student,4.82,3
+608,Ireland,premium,15.17,7
+609,Ethiopia,student,3.29,9
+610,Jamaica,standard,9.9,4
+611,Bahamas,basic,6.56,9
+612,Slovenia,premium,14.39,2
+613,Venezuela,basic,5.68,1
+614,Peru,standard,9.8,10
+615,Armenia,standard,12.75,3
+616,Philippines,student,4.0,2
+617,Bahamas,standard,10.59,10
+618,Sri Lanka,basic,6.68,9
+619,Slovenia,basic,4.62,8
+620,Poland,student,2.09,8
+621,Venezuela,basic,5.68,9
+622,Iceland,premium,16.96,1
+623,Hungary,premium,18.23,1
+624,Nigeria,basic,5.8,1
+625,Bulgaria,premium,14.76,2
+626,Azerbaijan,basic,4.42,2
+627,Singapore,basic,5.67,5
+628,Slovakia,standard,12.93,3
+629,El Salvador,student,2.79,6
+630,Iraq,student,4.57,7
+631,Iraq,basic,4.99,9
+632,Sweden,premium,15.04,2
+633,Ukraine,student,3.87,9
+634,Poland,standard,12.09,1
+635,Mexico,premium,15.08,8
+636,Trinidad and Tobago,student,2.83,9
+637,Iraq,standard,12.68,4
+638,Ireland,premium,15.17,3
+639,Indonesia,standard,11.19,2
+640,Argentina,student,2.01,10
+641,Mexico,standard,9.11,4
+642,Germany,basic,6.13,10
+643,Argentina,student,2.01,10
+644,Trinidad and Tobago,basic,5.3,4
+645,Chile,student,2.46,8
+646,Morocco,standard,11.55,1
+647,Sweden,premium,15.04,4
+648,Uruguay,premium,17.7,10
+649,Ecuador,premium,15.53,4
+650,Malaysia,standard,11.06,9
+651,Kenya,student,4.6,5
+652,Indonesia,basic,5.89,9
+653,Bolivia,standard,11.17,7
+654,Colombia,student,2.27,1
+655,Qatar,student,3.39,9
+656,New Zealand,student,4.71,7
+657,Denmark,premium,15.31,7
+658,Turkey,student,3.13,4
+659,Kenya,premium,18.55,3
+660,Iceland,basic,7.55,9
+661,Slovakia,student,4.34,9
+662,Georgia,standard,9.02,7
+663,Japan,premium,14.09,4
+664,Saudi Arabia,basic,4.85,8
+665,Iran,basic,4.75,9
+666,Israel,basic,7.97,5
+667,Iraq,basic,4.99,2
+668,Israel,standard,11.11,8
+669,South Africa,premium,14.55,5
+670,Canada,standard,11.7,4
+671,Austria,student,4.04,4
+672,Ethiopia,standard,10.05,7
+673,China,premium,17.88,5
+674,Iraq,student,4.57,9
+675,Guatemala,premium,18.35,5
+676,India,premium,14.42,9
+677,Nepal,student,4.98,2
+678,Singapore,premium,16.6,4
+679,Iran,premium,16.1,7
+680,Chile,standard,11.78,3
+681,Mexico,premium,15.08,9
+682,Paraguay,student,4.64,5
+683,Denmark,standard,10.83,6
+684,Morocco,student,2.45,10
+685,Japan,student,4.78,9
+686,Guatemala,premium,18.35,5
+687,Sri Lanka,student,4.25,8
+688,Russia,premium,18.98,3
+689,Sweden,student,4.82,3
+690,Azerbaijan,basic,4.42,9
+691,Argentina,basic,4.87,1
+692,USA,student,2.66,3
+693,Dominican Republic,standard,12.89,2
+694,Denmark,basic,7.65,4
+695,Afghanistan,student,4.79,6
+696,France,student,4.18,8
+697,Mexico,basic,5.68,9
+698,Peru,student,2.78,1
+699,Mexico,premium,15.08,9
+700,Vietnam,basic,5.68,9
+701,Ethiopia,student,3.29,3
+702,Belgium,basic,5.06,9
+703,Denmark,standard,10.83,4
+704,Cuba,premium,14.76,6
+705,Pakistan,student,2.38,2
+706,Iran,student,2.83,8
+707,Venezuela,standard,10.1,4
+708,Malaysia,basic,5.74,1
+709,Portugal,student,2.82,7
+710,Iraq,student,4.57,1
+711,Honduras,basic,4.09,3
+712,Spain,student,2.86,7
+713,El Salvador,premium,18.04,10
+714,Netherlands,basic,6.53,4
+715,Nigeria,student,2.78,5
+716,Chile,basic,7.21,5
+717,Azerbaijan,basic,4.42,3
+718,New Zealand,basic,4.27,4
+719,Bolivia,standard,11.17,7
+720,Italy,premium,18.3,3
+721,Venezuela,standard,10.1,10
+722,Greece,premium,18.99,7
+723,Sweden,basic,5.25,9
+724,Qatar,basic,4.38,2
+725,Croatia,standard,11.31,2
+726,UAE,student,2.56,6
+727,Brazil,premium,17.24,8
+728,Sri Lanka,standard,10.19,6
+729,Peru,student,2.78,7
+730,Turkey,student,3.13,2
+731,Cuba,premium,14.76,4
+732,Italy,basic,7.31,5
+733,Denmark,student,2.73,3
+734,Greece,premium,18.99,6
+735,Belgium,basic,5.06,1
+736,Australia,student,2.65,6
+737,Pakistan,basic,4.27,3
+738,Portugal,standard,9.92,7
+739,Slovenia,student,2.55,2
+740,Brazil,basic,4.1,6
+741,Peru,basic,6.86,10
+742,Ecuador,premium,15.53,7
+743,Canada,premium,18.45,7
+744,Greece,basic,6.19,9
+745,Japan,standard,10.29,7
+746,Russia,standard,9.87,5
+747,Malaysia,premium,14.6,8
+748,Norway,basic,7.5,3
+749,Croatia,premium,16.7,7
+750,Malaysia,student,2.66,2
+751,Lebanon,premium,18.3,4
+752,Dominican Republic,student,4.63,10
+753,Costa Rica,standard,9.4,8
+754,Belgium,standard,12.74,5
+755,USA,student,2.66,6
+756,Cuba,student,4.78,6
+757,Serbia,premium,16.5,7
+758,Guatemala,standard,9.42,5
+759,Philippines,standard,9.27,8
+760,New Zealand,standard,11.51,7
+761,New Zealand,premium,15.13,8
+762,Uruguay,standard,10.04,6
+763,Iraq,premium,16.21,7
+764,Lebanon,basic,5.6,10
+765,Egypt,standard,11.87,9
+766,Brazil,student,3.62,4
+767,Serbia,premium,16.5,2
+768,Slovakia,student,4.34,3
+769,Honduras,premium,15.65,4
+770,South Korea,standard,12.32,7
+771,Iraq,basic,4.99,8
+772,Ecuador,student,4.69,10
+773,Czech Republic,student,2.17,9
+774,Argentina,premium,18.04,9
+775,Ecuador,basic,4.58,2
+776,Japan,premium,14.09,3
+777,El Salvador,basic,7.2,10
+778,El Salvador,student,2.79,6
+779,Croatia,basic,7.86,1
+780,Netherlands,premium,15.84,4
+781,Kazakhstan,standard,12.51,8
+782,Iran,student,2.83,8
+783,Trinidad and Tobago,standard,12.45,6
+784,Brazil,student,3.62,2
+785,Thailand,student,3.94,2
+786,Switzerland,standard,11.91,6
+787,Australia,premium,15.14,8
+788,South Africa,student,3.29,6
+789,Singapore,basic,5.67,8
+790,Ethiopia,student,3.29,6
+791,Germany,premium,15.88,1
+792,Switzerland,basic,4.67,6
+793,El Salvador,basic,7.2,3
+794,Japan,standard,10.29,9
+795,Finland,premium,16.91,9
+796,Bulgaria,student,2.88,4
+797,Czech Republic,standard,9.84,3
+798,Honduras,student,4.78,7
+799,Brazil,standard,9.79,8
+800,Bolivia,student,3.74,7
+801,USA,standard,9.09,4
+802,Indonesia,basic,5.89,10
+803,Belgium,standard,12.74,6
+804,Philippines,standard,9.27,8
+805,Switzerland,premium,14.81,8
+806,Georgia,premium,18.08,10
+807,Greece,student,4.5,10
+808,Switzerland,premium,14.81,6
+809,Ireland,standard,11.69,5
+810,Costa Rica,basic,4.99,3
+811,New Zealand,basic,4.27,4
+812,Australia,basic,5.34,3
+813,Iran,standard,10.78,9
+814,Greece,student,4.5,10
+815,Sweden,student,4.82,7
+816,Turkey,student,3.13,9
+817,Zimbabwe,standard,9.45,9
+818,Russia,student,3.52,5
+819,Sweden,standard,10.06,6
+820,Slovenia,basic,4.62,6
+821,Canada,student,2.25,3
+822,Israel,student,4.57,9
+823,Afghanistan,student,4.79,7
+824,Bahamas,student,3.6,7
+825,Serbia,student,4.55,3
+826,Spain,basic,6.81,4
+827,Thailand,basic,4.79,5
+828,Kenya,premium,18.55,3
+829,Ireland,student,2.35,9
+830,Kazakhstan,basic,7.51,10
+831,Switzerland,premium,14.81,9
+832,Lebanon,basic,5.6,8
+833,Azerbaijan,standard,11.2,7
+834,Belgium,standard,12.74,5
+835,Argentina,student,2.01,5
+836,Qatar,basic,4.38,8
+837,Austria,standard,11.55,4
+838,Bolivia,premium,18.16,10
+839,Dominican Republic,student,4.63,3
+840,Costa Rica,standard,9.4,4
+841,South Africa,basic,5.06,10
+842,Qatar,premium,16.11,10
+843,Armenia,standard,12.75,6
+844,Thailand,premium,18.97,10
+845,Pakistan,basic,4.27,3
+846,Slovakia,basic,5.51,5
+847,Guatemala,standard,9.42,3
+848,Japan,standard,10.29,6
+849,Japan,student,4.78,8
+850,Norway,premium,17.27,7
+851,Iraq,student,4.57,2
+852,Honduras,basic,4.09,7
+853,Kazakhstan,premium,15.84,6
+854,Ireland,student,2.35,6
+855,Paraguay,basic,5.7,2
+856,Ireland,premium,15.17,2
+857,Armenia,student,2.34,4
+858,Bulgaria,standard,11.86,8
+859,Pakistan,premium,17.82,5
+860,UAE,standard,12.13,10
+861,Sri Lanka,premium,15.57,1
+862,Chile,basic,7.21,8
+863,Mexico,basic,5.68,3
+864,Serbia,student,4.55,1
+865,Bulgaria,standard,11.86,3
+866,Guatemala,premium,18.35,3
+867,Indonesia,basic,5.89,6
+868,South Korea,basic,7.5,6
+869,Jamaica,standard,9.9,1
+870,Hungary,premium,18.23,4
+871,Bulgaria,basic,6.21,2
+872,USA,standard,9.09,8
+873,Italy,standard,11.46,10
+874,Kenya,student,4.6,1
+875,Canada,premium,18.45,2
+876,Bulgaria,standard,11.86,8
+877,Italy,standard,11.46,7
+878,Portugal,basic,4.31,2
+879,New Zealand,premium,15.13,5
+880,Sweden,student,4.82,3
+881,El Salvador,standard,12.45,2
+882,Georgia,basic,6.61,10
+883,Guatemala,standard,9.42,8
+884,Qatar,standard,10.71,3
+885,Slovakia,student,4.34,4
+886,Portugal,basic,4.31,3
+887,Austria,student,4.04,6
+888,Bulgaria,premium,14.76,3
+889,Japan,premium,14.09,2
+890,Japan,premium,14.09,1
+891,Nicaragua,premium,16.29,4
+892,Uzbekistan,standard,11.8,7
+893,Thailand,basic,4.79,4
+894,Nepal,student,4.98,2
+895,China,student,3.58,10
+896,Italy,basic,7.31,6
+897,New Zealand,standard,11.51,7
+898,Venezuela,student,4.3,6
+899,Azerbaijan,standard,11.2,8
+900,Italy,basic,7.31,10
+901,Germany,basic,6.13,5
+902,Nigeria,basic,5.8,1
+903,Hungary,premium,18.23,9
+904,Romania,student,4.98,7
+905,Spain,standard,9.17,5
+906,Spain,premium,15.13,2
+907,Kazakhstan,standard,12.51,3
+908,Armenia,premium,14.66,7
+909,Bolivia,basic,7.61,5
+910,Ethiopia,student,3.29,4
+911,France,standard,11.4,2
+912,Croatia,basic,7.86,8
+913,Costa Rica,basic,4.99,5
+914,Jamaica,standard,9.9,2
+915,Canada,standard,11.7,1
+916,Finland,student,4.68,6
+917,Uzbekistan,premium,17.05,3
+918,Iran,standard,10.78,5
+919,Austria,basic,7.95,6
+920,Bulgaria,premium,14.76,9
+921,Germany,premium,15.88,10
+922,Dominican Republic,basic,7.45,8
+923,Ireland,premium,15.17,1
+924,Nepal,standard,10.82,6
+925,Finland,premium,16.91,2
+926,Uruguay,basic,6.54,4
+927,Kazakhstan,basic,7.51,1
+928,Canada,standard,11.7,1
+929,Singapore,premium,16.6,7
+930,Denmark,standard,10.83,1
+931,Peru,student,2.78,4
+932,Philippines,standard,9.27,7
+933,New Zealand,premium,15.13,2
+934,Uruguay,premium,17.7,2
+935,Afghanistan,basic,4.28,3
+936,Kenya,basic,5.99,7
+937,Germany,student,3.65,5
+938,Australia,premium,15.14,2
+939,Peru,student,2.78,1
+940,Iran,standard,10.78,5
+941,Venezuela,premium,14.01,10
+942,Japan,student,4.78,6
+943,Bolivia,student,3.74,4
+944,Azerbaijan,standard,11.2,3
+945,USA,student,2.66,1
+946,Morocco,premium,17.03,1
+947,Saudi Arabia,basic,4.85,7
+948,Australia,basic,5.34,4
+949,Georgia,standard,9.02,7
+950,Sri Lanka,basic,6.68,3
+951,Indonesia,basic,5.89,1
+952,Morocco,student,2.45,6
+953,Ireland,basic,6.37,10
+954,Netherlands,standard,10.45,7
+955,Italy,basic,7.31,7
+956,Nicaragua,standard,12.26,4
+957,Thailand,premium,18.97,6
+958,Hungary,premium,18.23,6
+959,Slovenia,premium,14.39,4
+960,Italy,standard,11.46,3
+961,Paraguay,basic,5.7,3
+962,Belgium,standard,12.74,8
+963,Iceland,premium,16.96,7
+964,Austria,premium,16.77,4
+965,Slovenia,premium,14.39,8
+966,India,basic,7.5,2
+967,Finland,premium,16.91,10
+968,Chile,standard,11.78,6
+969,Norway,basic,7.5,4
+970,Jordan,student,2.29,9
+971,UK,premium,14.45,5
+972,Ukraine,basic,4.35,7
+973,Slovenia,standard,12.83,2
+974,Iceland,basic,7.55,3
+975,Austria,basic,7.95,1
+976,Kenya,standard,9.7,4
+977,Czech Republic,premium,16.0,2
+978,Paraguay,premium,14.37,2
+979,Mexico,basic,5.68,4
+980,El Salvador,student,2.79,3
+981,Portugal,premium,14.5,2
+982,Chile,student,2.46,1
+983,Russia,student,3.52,7
+984,Nepal,basic,4.28,7
+985,Bahamas,student,3.6,3
+986,Jordan,standard,11.68,3
+987,Indonesia,premium,15.32,8
+988,Denmark,basic,7.65,10
+989,Cuba,standard,11.47,5
+990,Nepal,student,4.98,9
+991,Bangladesh,basic,4.81,2
+992,Indonesia,student,4.61,3
+993,Romania,standard,10.68,9
+994,Japan,basic,3.99,7
+995,Jordan,student,2.29,9
+996,Sri Lanka,premium,15.57,10
+997,Afghanistan,premium,15.32,7
+998,Pakistan,standard,12.03,1
+999,New Zealand,standard,11.51,1
+1000,Indonesia,basic,5.89,8

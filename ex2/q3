@@ -1,0 +1,8 @@
+SELECT 
+  sp.country,
+  AVG(sp.monthly_cost) AS avg_monthly_cost,
+  COUNT(s.subscription_id) AS subscription_count
+FROM Subscription_Plans sp
+JOIN Subscriptions s ON sp.plan_id = s.plan_id
+GROUP BY sp.country
+ORDER BY avg_monthly_cost DESC;

@@ -1,0 +1,20 @@
+WITH MonthlyPayments AS (
+  SELECT 
+    EXTRACT(YEAR FROM payment_date) AS year,
+    EXTRACT(MONTH FROM payment_date) AS month,
+    SUM(amount) AS total_monthly_amount
+  FROM Payments
+  GROUP BY year, month
+),
+RankedPayments AS (
+  SELECT 
+    year,
+    month,
+    total_monthly_amount,
+    RANK() OVER (ORDER BY total_monthly_amount DESC) AS sales_rank
+  FROM MonthlyPayments
+)
+SELECT *
+FROM RankedPayments
+ORDER BY total_monthly_amount DESC
+LIMIT 40;

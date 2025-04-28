@@ -1,0 +1,8 @@
+BEGIN;
+DELETE FROM subscriptions s
+WHERE NOT EXISTS (
+  SELECT 1
+  FROM payments p
+  WHERE p.subscription_id = s.subscription_id
+);
+ROLLBACK;
