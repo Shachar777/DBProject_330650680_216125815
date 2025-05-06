@@ -9,15 +9,17 @@ CREATE TABLE Discounts
 CREATE TABLE Subscription_Plans
 (
   plan_id INT NOT NULL,
-  plan_name VARCHAR(40) NOT NULL,
+  country VARCHAR(40) NOT NULL,
+  plan_type VARCHAR(20) NOT NULL,
   monthly_cost NUMERIC(6,2) NOT NULL,
+  device_limit INT,
   PRIMARY KEY (plan_id)
 );
 
 CREATE TABLE Subscriptions
 (
   subscription_id INT NOT NULL,
-  customer_name VARCHAR(40) NOT NULL,
+  customer_name VARCHAR(40),
   plan_id INT NOT NULL,
   discount_id INT NOT NULL,
   PRIMARY KEY (subscription_id),
@@ -28,7 +30,7 @@ CREATE TABLE Subscriptions
 CREATE TABLE Payments
 (
   payment_id INT NOT NULL,
-  amount NUMERIC(6,2) CHECK (amount > 0 AND amount <= 9999.99),
+  amount NUMERIC(6,2)),
   payment_date DATE NOT NULL,
   subscription_id INT NOT NULL,
   PRIMARY KEY (payment_id),
