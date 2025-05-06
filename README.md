@@ -49,8 +49,8 @@ Dept.: Finances
 
 המערכת מאפשרת לפלטפורמת הסטרימינג לנהל את הצד הפיננסי שלה בצורה מסודרת ויעילה, תוך שמירה על מידע מדויק וניהול עסקאות בצורה חלקה.
 
-![image](https://github.com/user-attachments/assets/6c12a60c-6459-4b31-b0ff-0fcadf6ec384)
-![image](https://github.com/user-attachments/assets/7ce65f21-f929-4b84-8878-1cfab48ded4d)
+![image](https://github.com/user-attachments/assets/4c3cecd1-efd8-46eb-bae7-523498f0f170)
+![image](https://github.com/user-attachments/assets/8d1ce340-d550-4fc4-ada1-38ff7af66083)
 ![image](https://github.com/user-attachments/assets/e0bb848e-2f1a-407a-8018-e620753e0973)
 ![image](https://github.com/user-attachments/assets/a22914ed-d72d-4c6d-82c1-f003f5614e7b)
 ![image](https://github.com/user-attachments/assets/7beb71cf-4c5d-407a-86f2-e44a2704af32)
