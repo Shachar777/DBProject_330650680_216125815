@@ -5,10 +5,10 @@ INSERT INTO Discounts (discount_id, discount_percent, valid_until) VALUES
 (3, 15, '2025-04-15');
 
 -- Insert into Subscription_Plans
-INSERT INTO Subscription_Plans (plan_id, plan_name, monthly_cost) VALUES
-(1, 'Basic', 9.99),
-(2, 'Standard', 14.99),
-(3, 'Premium', 19.99);
+INSERT INTO Subscription_Plans (plan_id, country, plan_type, monthly_cost, device_limit) VALUES
+(1, 'Uruguay', 'standard', 10.04, 5),
+(2, 'Chile', 'student', 2.46, 1),
+(3, 'Uzbekistan', 'standard', 11.8, 6);
 
 -- Insert into Subscriptions
 INSERT INTO Subscriptions (subscription_id, customer_name, plan_id, discount_id) VALUES
