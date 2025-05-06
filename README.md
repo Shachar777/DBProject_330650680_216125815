@@ -56,7 +56,8 @@ Dept.: Finances
 ![image](https://github.com/user-attachments/assets/7beb71cf-4c5d-407a-86f2-e44a2704af32)
 ![image](https://github.com/user-attachments/assets/83b18cf8-9bde-4290-9a6e-36c4127fc4bb)
 ![image](https://github.com/user-attachments/assets/35930a9b-7191-41bf-b678-ad44dab563bc)
-![image](https://github.com/user-attachments/assets/0a26b098-5190-4630-a479-0120bf522f45)
+![image](https://github.com/user-attachments/assets/c4bbdce4-cd57-4d95-8fd3-c1d089703def)
+![image](https://github.com/user-attachments/assets/cade33d3-9810-4167-96e8-352db5c68d41)
 ![image](https://github.com/user-attachments/assets/5c008d18-c070-48d8-91fa-505cd7efc411)
 ![image](https://github.com/user-attachments/assets/2f9983a4-08f8-42ce-b2ad-91727a1dc018)
 
