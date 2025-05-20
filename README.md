@@ -61,6 +61,41 @@ Dept.: Finances
 ![image](https://github.com/user-attachments/assets/5c008d18-c070-48d8-91fa-505cd7efc411)
 ![image](https://github.com/user-attachments/assets/2f9983a4-08f8-42ce-b2ad-91727a1dc018)
 
+שאילתות delete
+1. השאילתה מוחקת מהטבלה discounts את כל ההנחות שתוקפן פג לפני יותר משנה, ושלא נעשה בהן שימוש על ידי אף מנוי (כלומר, אין אף רשומה בטבלת subscriptions שבה מופיעה אותה discount_id).
+
+![image](https://github.com/user-attachments/assets/2ede949b-292a-41a9-ae1a-8a438f64556b)
+![image](https://github.com/user-attachments/assets/cb1777e1-3755-43cd-baaa-62bd80af9a7d)
+![image](https://github.com/user-attachments/assets/71a514aa-ad85-45ce-a774-6842d85531ff)
+![image](https://github.com/user-attachments/assets/3143fe93-65ae-40ab-a1e7-23a3926ae416)
+2. השאילתה מוחקת מהטבלה subscriptions את כל המנויים שלא בוצע עבורם אף תשלום — כלומר, כאלה שאין להם רשומות מתאימות בטבלת payments.
+
+![image](https://github.com/user-attachments/assets/ef3ce8ba-890c-470e-ae37-04c7c906d5e2)
+![image](https://github.com/user-attachments/assets/b554ae2a-a423-4070-84fc-7e833a4e7dde)
+![image](https://github.com/user-attachments/assets/9f8f1c90-a3fe-4c3b-a747-163a6c37a7a8)
+![image](https://github.com/user-attachments/assets/6adfc7a2-604e-496a-bee2-9e422e041c0f)
+
+3. השאילתה מוחקת מהטבלה transactions את כל העסקאות שכשלו (status = 'Failed') ושהתרחשו לפני יותר מחצי שנה.
+![image](https://github.com/user-attachments/assets/6510819a-7f9b-4cf3-b1be-a9d88446a26f)
+![image](https://github.com/user-attachments/assets/8bc90fec-1d08-4543-8387-364615325dcc)
+![image](https://github.com/user-attachments/assets/14e70572-906e-4473-8bf0-d5e3775d3931)
+![image](https://github.com/user-attachments/assets/18d72d2e-03c3-4c1c-9942-6292dcd33ed9)
+
+שאילתות update
+1. השאילתה מעדכנת את הסכום (amount) בטבלת payments, כך שישקף את ההנחה הרלוונטית: היא מחשבת את הסכום לאחר הנחה לפי האחוז (discount_percent) מתוך טבלת discounts.
+העדכון מתבצע רק עבור תשלומים שמקושרים למנויים שיש להם הנחה בתוקף (כלומר, שהשדה valid_until בתאריך הנוכחי או מאוחר ממנו).
+![image](https://github.com/user-attachments/assets/12b664fa-e586-4f0d-a76d-d731d4a8fec9)
+![image](https://github.com/user-attachments/assets/59288430-c274-45f0-b6cd-2c2c3d44b7c7)
+![image](https://github.com/user-attachments/assets/04fc28bf-8ccd-4fd0-8cb4-dcae82d02b97)
+![image](https://github.com/user-attachments/assets/3b67a677-312d-4ff0-b193-7ab55d2795dd)
+
+
+
+
+
+
+
+
 
 
 
