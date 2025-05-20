@@ -1,4 +1,4 @@
-# DBProject_330650680_216125815
+![image](https://github.com/user-attachments/assets/46c86656-68ee-4e11-87cc-beb47a4c1c71)# DBProject_330650680_216125815
 
 **Submitters**:  
 Shachar Levy – 330650680  
@@ -109,6 +109,26 @@ Yagel Kaniel – 216125815
    ![image](https://github.com/user-attachments/assets/516b399b-0000-4cb8-a3ee-e3c62ec4bc3d)  
 4. יחס בין הכנסה ממוצעת למספר מנויים במדינה:  
    ![image](https://github.com/user-attachments/assets/404b62c7-5358-4661-841d-8e747c3dd906)
+   5. מנויים שהעסקה האחרונה שלהם נכשלה:
+
+![image](https://github.com/user-attachments/assets/23efbec2-bd3a-4453-a9af-ed90f9d4382c)
+
+6. המדינות בעלות כמות הרשומים הכי גדולות:
+![image](https://github.com/user-attachments/assets/89339560-9fda-4807-a24a-8caeac6d7771)
+
+7. ההחזרים הכי גבוהים:
+![image](https://github.com/user-attachments/assets/5243bf6a-5267-46e8-b62d-982b5b604847)
+
+8. השאילתה מציגה את 40 הלקוחות ששילמו הכי הרבה לאחר הנחה, כולל מספר התשלומים שביצעו:
+![image](https://github.com/user-attachments/assets/e041da36-e58c-4571-8aa6-c93e1ae49497)
+
+
+
+
+
+
+
+
 
 ---
 
