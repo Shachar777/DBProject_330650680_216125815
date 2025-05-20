@@ -180,12 +180,18 @@ ORDER BY subscription_count_revenue_ratio
    ![image](https://github.com/user-attachments/assets/404b62c7-5358-4661-841d-8e747c3dd906)
 
 
+תיאור ה constraints:
+1. כמות המכשירים גדולה מ 0 וקטנה מ 10.
+![image](https://github.com/user-attachments/assets/7eb9cfda-db98-4f75-a22f-975171770e5e)
+
+
+2. שם הלקוח לא יכול להיות "null"
+   ![image](https://github.com/user-attachments/assets/cf9f49fd-2d5d-419e-905a-0333c95e410a)
 
 
 
-
-
-
+3. כמות התשלום גדולה מ 0 וקטנה מ 9999.99
+![image](https://github.com/user-attachments/assets/2941bf62-895e-4c30-8658-a0632eb703a1)
 
 
 
