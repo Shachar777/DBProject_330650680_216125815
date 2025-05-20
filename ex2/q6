@@ -1,0 +1,8 @@
+SELECT 
+  sp.country,
+  COUNT(s.subscription_id) AS total_subscriptions
+FROM Subscription_Plans sp
+JOIN Subscriptions s ON sp.plan_id = s.plan_id
+GROUP BY sp.country
+ORDER BY total_subscriptions DESC
+LIMIT 40;

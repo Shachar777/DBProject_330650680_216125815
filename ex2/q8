@@ -1,0 +1,10 @@
+SELECT 
+  s.customer_name,
+  COUNT(p.payment_id) AS num_payments,
+  SUM(p.amount * (1 - d.discount_percent / 100.0)) AS total_paid
+FROM Subscriptions s
+JOIN Payments p ON s.subscription_id = p.subscription_id
+JOIN Discounts d ON s.discount_id = d.discount_id
+GROUP BY s.customer_name
+ORDER BY total_paid DESC
+LIMIT 40;

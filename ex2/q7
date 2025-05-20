@@ -1,0 +1,10 @@
+SELECT 
+  r.refund_id,
+  r.refund_amount,
+  r.refund_date,
+  p.amount AS original_payment_amount,
+  p.payment_date
+FROM Refunds r
+JOIN Payments p ON r.payment_id = p.payment_id
+ORDER BY r.refund_amount DESC
+LIMIT 40;

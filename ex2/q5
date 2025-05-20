@@ -1,0 +1,6 @@
+SELECT s.customer_name, t.status, t.transaction_date
+FROM Transactions t
+JOIN Payments p ON t.payment_id = p.payment_id
+JOIN Subscriptions s ON p.subscription_id = s.subscription_id
+WHERE t.status = 'Failed'
+ORDER BY t.transaction_date DESC;
