@@ -90,6 +90,94 @@ Dept.: Finances
 ![image](https://github.com/user-attachments/assets/3b67a677-312d-4ff0-b193-7ab55d2795dd)
 
 
+2.   השאילתה מעדכנת את טבלת subscription_plans ומעלה את המחיר החודשי (monthly_cost) ב־5% לכל התוכניות שמיועדות לישראל (country = 'Israel').
+המחיר המעודכן מעוגל לשתי ספרות אחרי הנקודה.
+
+![image](https://github.com/user-attachments/assets/b62cd1f4-fad7-48de-8d10-0f3dd4509b37)
+![image](https://github.com/user-attachments/assets/ced02bce-c0a3-4a3e-ac33-3dc597b0c847)
+![image](https://github.com/user-attachments/assets/04fc28bf-8ccd-4fd0-8cb4-dcae82d02b97)
+![image](https://github.com/user-attachments/assets/279aa45c-ce02-4e1e-affe-6a6df5981b80)
+
+3. השאילתה מעדכנת את טבלת transactions ומשנה את הסטטוס של עסקאות שתלויות (status = 'Pending') ל־Failed, אם עברו יותר משבעה ימים ממועד ביצוע העסקה (transaction_date).
+   
+![image](https://github.com/user-attachments/assets/609bea73-b4cb-4e52-9897-ad186decc665)
+![image](https://github.com/user-attachments/assets/8445278a-6a96-498c-a61c-e0341bdd84c9)
+![image](https://github.com/user-attachments/assets/b3326b0f-f24d-4f89-83b3-d67c192889b7)
+![image](https://github.com/user-attachments/assets/ae2705fb-bfa6-4268-a50b-26e2e162df4a)
+
+שאילתות select
+1. שאילתה זו מחשבת סך תשלומים חודשיים לאחר הנחות ומדרגת אותם לפי גובה ההכנסה. תחילה, היא מחשבת את הסכום המופחת לכל תשלום בהתאם להנחות הרלוונטיות. אחר כך, היא מקבצת את הנתונים לפי חודש ושנה ומסכמת את התשלומים בכל חודש. לבסוף, השאילתה מדרגת את החודשים לפי גובה ההכנסות בסדר יורד.
+   WITH DiscountedPayments AS (
+  SELECT 
+    p.payment_date,
+    -- Apply discount if it exists, else use full amount
+    p.amount * (1 - COALESCE(d.discount_percent, 0) / 100.0) AS discounted_amount
+  FROM Payments p
+  JOIN Subscriptions s ON p.subscription_id = s.subscription_id
+  LEFT JOIN Discounts d ON s.discount_id = d.discount_id
+),
+MonthlyPayments AS (
+  SELECT 
+    EXTRACT(YEAR FROM payment_date) AS year,
+    EXTRACT(MONTH FROM payment_date) AS month,
+    SUM(discounted_amount) AS total_monthly_amount
+  FROM DiscountedPayments
+  GROUP BY year, month
+),
+RankedPayments AS (
+  SELECT 
+    year,
+    month,
+    total_monthly_amount,
+    RANK() OVER (ORDER BY total_monthly_amount DESC) AS sales_rank
+  FROM MonthlyPayments
+)
+SELECT *
+FROM RankedPayments
+ORDER BY total_monthly_amount DESC
+LIMIT 40;
+
+![image](https://github.com/user-attachments/assets/bce46179-c9e4-4289-b61f-fbc0a2c71264)
+2. שאילתה זו מחשבת את סוג המנוי (plan_type) שהניב את ההכנסה הגבוהה ביותר בכל שנה, תוך התחשבות בהנחות.
+SELECT year, plan_type, total_revenue
+FROM (
+    SELECT 
+        EXTRACT(YEAR FROM p.payment_date) AS year,
+        sp.plan_type,
+        SUM(p.amount * (1 - COALESCE(d.discount_percent, 0) / 100.0)) AS total_revenue,
+        RANK() OVER (
+            PARTITION BY EXTRACT(YEAR FROM p.payment_date)
+            ORDER BY SUM(p.amount * (1 - COALESCE(d.discount_percent, 0) / 100.0)) DESC
+        ) AS rnk
+    FROM Payments p
+    JOIN Subscriptions s ON p.subscription_id = s.subscription_id
+    JOIN Subscription_Plans sp ON s.plan_id = sp.plan_id
+    LEFT JOIN Discounts d ON s.discount_id = d.discount_id
+    GROUP BY year, sp.plan_type
+) AS ranked
+WHERE rnk = 1
+ORDER BY year;
+![image](https://github.com/user-attachments/assets/f180b158-64fb-4868-9526-490deec418e6)
+
+3. שאילתה זו מנתחת את היחס בין העלות הממוצעת של מנוי לאחר הנחות לבין מספר המנויים בכל מדינה.
+SELECT 
+  sp.country,
+  AVG(sp.monthly_cost * (1 - COALESCE(d.discount_percent, 0) / 100.0)) AS avg_discounted_cost,
+  COUNT(s.subscription_id) AS subscription_count,
+  AVG(sp.monthly_cost * (1 - COALESCE(d.discount_percent, 0) / 100.0)) / COUNT(s.subscription_id) AS subscription_count_revenue_ratio
+
+
+FROM Subscription_Plans sp
+JOIN Subscriptions s ON sp.plan_id = s.plan_id 
+LEFT JOIN Discounts d ON s.discount_id = d.discount_id
+GROUP BY sp.country
+ORDER BY subscription_count_revenue_ratio
+
+ DESC;
+![image](https://github.com/user-attachments/assets/516b399b-0000-4cb8-a3ee-e3c62ec4bc3d)
+
+4. שאילתה זו מנתחת את היחס בין ההכנסה הממוצעת לכמות המנויים בכל מדינה, ומסדרת את התוצאות מהיחס הגבוה לנמוך.
+   ![image](https://github.com/user-attachments/assets/404b62c7-5358-4661-841d-8e747c3dd906)
 
 
 
