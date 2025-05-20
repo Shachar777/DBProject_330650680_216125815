@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/46c86656-68ee-4e11-87cc-beb47a4c1c71)# DBProject_330650680_216125815
+# DBProject_330650680_216125815
 
 **Submitters**:  
 Shachar Levy – 330650680  
