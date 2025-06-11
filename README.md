@@ -278,6 +278,167 @@ LIMIT 100;
 
 
 
+## שלב 4
+
+תוכנית 1:
+התחלת התוכנית – הדפסת הודעת התחלה עם שם התוכנית והשעה הנוכחית.
+
+שלב 1: קבלת סיכום לקוח – קריאה לפונקציה get_customer_summary עבור לקוח לפי customer_id, והצגת סיכום הכולל את שמו, מספר הפרופילים, דקות הצפייה ומספר התכנים שסימן כמועדפים.
+
+שלב 2: עדכון מנוי – קריאה לפרוצדורה update_customer_subscription לעדכון תוכנית המנוי של הלקוח, כולל הנחה באחוזים.
+
+סיכום התוכנית – הדפסת זמן הריצה של התוכנית.
+```sql
+-- main_program_1.sql
+DO $$
+DECLARE
+    v_customer_id INTEGER := 1;
+    v_new_plan_id INTEGER := 2;
+    v_discount_percent INTEGER := 15;
+    
+    -- משתנים לפונקציה
+    v_summary_record RECORD;
+    
+    -- משתנים כלליים
+    v_start_time TIMESTAMP;
+    v_program_name VARCHAR(50) := 'Customer Analysis Program';
+BEGIN
+    v_start_time := CURRENT_TIMESTAMP;
+    RAISE NOTICE '=== % Started at % ===', v_program_name, v_start_time;
+    
+    -- חלק 1: קבלת סיכום לקוח עם הפונקציה
+    RAISE NOTICE 'Step 1: Getting customer summary...';
+    
+    SELECT * INTO v_summary_record
+    FROM get_customer_summary(v_customer_id);
+    
+    RAISE NOTICE 'Customer: %, Profiles: %, Watch Minutes: %, Favorites: %', 
+                 v_summary_record.customer_name,
+                 v_summary_record.total_profiles,
+                 v_summary_record.total_watch_minutes,
+                 v_summary_record.favorite_count;
+    
+    -- חלק 2: עדכון מנוי עם הפרוצדורה
+    RAISE NOTICE 'Step 2: Updating customer subscription...';
+    
+    CALL update_customer_subscription(v_customer_id, v_new_plan_id, v_discount_percent);
+    
+    RAISE NOTICE 'Subscription updated successfully!';
+    
+    -- סיכום התוכנית
+    RAISE NOTICE '=== % Completed in % seconds ===', 
+                 v_program_name, 
+                 EXTRACT(EPOCH FROM (CURRENT_TIMESTAMP - v_start_time));
+
+EXCEPTION
+    WHEN OTHERS THEN
+        RAISE NOTICE 'ERROR in %: %', v_program_name, SQLERRM;
+END $$;
+```
+![image](https://github.com/user-attachments/assets/3bda58f9-6371-434f-968d-7e91ce465008)
+![image](https://github.com/user-attachments/assets/c9ce0ed1-db21-4e96-bbec-6913b855ddfb)
+
+
+
+
+תוכנית 2:
+התחלת התוכנית – הדפסת הודעת פתיחה עם שם התוכנית ושעת ההתחלה.
+
+שלב 1: שליפת סרטים של הלקוח
+
+קריאה לפונקציה get_customer_movies_cursor שמחזירה cursor עם רשימת סרטים של הלקוח.
+
+קריאה מה־cursor בלולאה:
+
+נספרים כל הסרטים.
+
+מוצגים שלושת הסרטים הראשונים, כולל מזהה, משך צפייה, והאם סומן כמועדף.
+
+סגירת ה־cursor בסיום.
+
+שלב 2: העברת מועדפים בין פרופילים
+
+קריאה לפרוצדורה transfer_favorites, שמעבירה עד movies_limit סרטים מועדפים מפרופיל אחד (מקור) לאחר (יעד), כאשר true מציין האם לאפשר דריסת נתונים קיימים (בהנחה שזה הפרמטר).
+
+סיכום – הדפסת מספר הסרטים שנמצאו וזמן הריצה של התוכנית.
+
+```sql
+-- main_program_2.sql
+DO $$
+DECLARE
+    v_customer_id INTEGER := 1;
+    v_from_profile INTEGER := 1;
+    v_to_profile INTEGER := 2;
+    v_movies_limit INTEGER := 3;
+    
+    -- משתנים לעבודה עם cursor
+    movies_cursor REFCURSOR;
+    v_movie_record RECORD;
+    v_movie_count INTEGER := 0;
+    
+    -- משתנים כלליים
+    v_start_time TIMESTAMP;
+    v_program_name VARCHAR(50) := 'Profile Management Program';
+BEGIN
+    v_start_time := CURRENT_TIMESTAMP;
+    RAISE NOTICE '=== % Started at % ===', v_program_name, v_start_time;
+    
+    -- חלק 1: קבלת רשימת סרטים עם cursor
+    RAISE NOTICE 'Step 1: Getting customer movies with cursor...';
+    
+    movies_cursor := get_customer_movies_cursor(v_customer_id);
+    
+    -- קריאה מה-cursor
+    LOOP
+        FETCH movies_cursor INTO v_movie_record;
+        EXIT WHEN NOT FOUND;
+        
+        v_movie_count := v_movie_count + 1;
+        
+        -- הדפס רק 3 סרטים ראשונים
+        IF v_movie_count <= 3 THEN
+            RAISE NOTICE 'Movie %: ID=%, Minutes=%, Favorite=%', 
+                         v_movie_count,
+                         v_movie_record.movie_id,
+                         v_movie_record.total_minutes,
+                         v_movie_record.is_favorite;
+        END IF;
+    END LOOP;
+    
+    CLOSE movies_cursor;
+    RAISE NOTICE 'Found % movies total', v_movie_count;
+    
+    -- חלק 2: העברת מועדפים בין פרופילים
+    RAISE NOTICE 'Step 2: Transferring favorites between profiles...';
+    
+    CALL transfer_favorites(v_from_profile, v_to_profile, v_movies_limit, true);
+    
+    RAISE NOTICE 'Favorites transferred successfully!';
+    
+    -- סיכום התוכנית
+    RAISE NOTICE '=== % Completed in % seconds ===', 
+                 v_program_name,
+                 EXTRACT(EPOCH FROM (CURRENT_TIMESTAMP - v_start_time));
+
+EXCEPTION
+    WHEN OTHERS THEN
+        RAISE NOTICE 'ERROR in %: %', v_program_name, SQLERRM;
+END $$;
+```
+
+![image](https://github.com/user-attachments/assets/d831a9ae-8964-433c-87d0-c28e7080b35d)
+מצב התחלתי:
+![image](https://github.com/user-attachments/assets/01d358ef-095b-415c-bb03-b009894c5f97)
+![image](https://github.com/user-attachments/assets/98d1e0b1-9797-488b-af98-d6a11b203eeb)
+הרצה:
+![image](https://github.com/user-attachments/assets/3f0cc5b7-a68e-48db-89db-5ceb90e16dfc)
+
+לאחר הרצה:
+
+![image](https://github.com/user-attachments/assets/b7f42a95-d142-4db3-bbff-b547a85f0e0e)
+![image](https://github.com/user-attachments/assets/ba3bca6f-9eca-4545-80d6-51897f223965)
+
+
 
 
 
