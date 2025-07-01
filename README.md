@@ -444,4 +444,120 @@ END $$;
 
 
 
+## שלב 5 - ממשק גרפי
 
+הוראות כניסה למערכת:
+כאשר מריצים את תוכנת המערכת, ייפתח חלון כפי שניתן לראות, ותתבקשו להכניס שם משתמש וסיסמא.
+שם משתמש:  netflix_admin
+סיסמא: password123
+לאחר מכן לוחצים על login ונכנסים למערכת.
+
+
+
+![image](https://github.com/user-attachments/assets/75f40924-8081-4e19-9f5b-c5397f531ed4)
+
+דרך העבודה:
+ נתנו לבינה מלאכותית לייצר לנו שלבים לבניית הפרויקט. לאחר מכן, מימשנו את השלבים עם עזרה של Claude Sonnet 4. להלן השלבים:
+ 
+ חיבור למסד נתונים
+יצירת פונקציית חיבור (get_connection()) ל-PostgreSQL.
+
+מסך התחברות
+טופס פשוט שמוביל לתפריט הראשי.
+
+תפריט ראשי
+ניווט למסכים: לקוחות, פרופילים, היסטוריית צפייה, דוחות, יציאה.
+
+מסך ניהול לקוחות (CRUD)
+הצגה, הוספה, עדכון ומחיקה של לקוחות.
+
+מסך ניהול פרופילים (CRUD)
+עם קשר ללקוח (foreign key), כולל שדות סטטוס ותמונה.
+
+מסך ניהול היסטוריית צפייה (CRUD)
+טבלה מקשרת בין פרופילים לסרטים, עם צפייה ועדכון.
+
+מסך דוחות ושאילתות
+הרצת 2 שאילתות ו-2 פרוצדורות/פונקציות והצגת תוצאות.
+
+שיפורים גרפיים ו-UX
+יישור שדות, עיצוב נעים, הודעות משתמש, סרגלים וכפתורי ניווט.
+
+
+כלי הפיתוח:
+
+שפת תכנות: Python
+
+- שפת התכנות הראשית - קלה ללמידה, חזקה ונוחה לפיתוח GUI
+
+- גרסה מומלצת: Python 3.8 ומעלה
+
+
+
+ספרייה: Tkinter
+
+- ספריית GUI המובנית של Python
+
+- יתרונות: מגיעה עם Python, לא צריך התקנה נוספת
+
+- שימוש: יצירת החלונות, הכפתורים, הטפסים והטבלאות
+
+
+
+
+
+שפת שאילתות: PostgreSQL
+
+- מסד נתונים רלציוני מתקדם ומקצועי
+
+- יתרונות: חזק, אמין, תומך בשאילתות מורכבות
+
+- שימוש: אחסון כל הנתונים של שירות הסטרימינג
+
+
+
+ספרייה: psycopg2
+
+- ספריית החיבור בין Python ל-PostgreSQL
+
+- התקנה: pip install psycopg2
+
+- שימוש: ביצוע שאילתות, עדכון נתונים, ניהול טרנזקציות
+
+
+
+
+כלי הויזואליזציה:
+
+- ספריית גרפים סטטיים - Matplotlib
+
+- התקנה: pip install matplotlib
+
+- שימוש: יצירת תרשימי עמודות של הכנסות חודשיות
+
+
+
+ספריית ניתוח נתונים - Pandas
+
+- התקנה: pip install pandas
+
+- שימוש: עיבוד הנתונים לפני יצירת הגרפי
+
+
+תמונות מסך:
+
+
+![queryA](https://github.com/user-attachments/assets/6c8ab236-eb91-4886-a69f-3a6fb2701d23)
+![profiles_management](https://github.com/user-attachments/assets/fe61a7e9-0f7e-43f5-b4a1-147f3b2cea9c)
+![procedure](https://github.com/user-attachments/assets/fa3c2d83-6b54-4f9e-a05f-28b78eda8aa7)
+![main_menu](https://github.com/user-attachments/assets/04487efb-2f66-4be3-a1de-772163dc9f3a)
+![login_window](https://github.com/user-attachments/assets/f846eb01-c5a3-40f0-8744-2d41fa550a72)
+![login_successful](https://github.com/user-attachments/assets/d8465653-f186-4d03-8c3a-204db8da529a)
+![insert_successful](https://github.com/user-attachments/assets/60bede9a-2ae3-4ab4-b3ae-33f4153cee59)
+![function](https://github.com/user-attachments/assets/9fb16a80-45cd-4d13-9c85-0aee4414ba28)
+![customers_management](https://github.com/user-attachments/assets/802056c2-c4ef-47c4-841a-d09db6368a80)
+![watchhistory_management](https://github.com/user-attachments/assets/b5c02181-35de-4681-bbcf-022c8548463b)
+![watch_history_management](https://github.com/user-attachments/assets/fdd95f86-7e4c-4fe7-b0a5-bee3c63b8423)
+![revenue_chart](https://github.com/user-attachments/assets/61eac9fa-e8a2-4077-9b76-b4470126f90f)
+![reports_window](https://github.com/user-attachments/assets/680f18e9-a0e2-417b-8fc4-03cbc807efb6)
+![queryB](https://github.com/user-attachments/assets/7aceb871-31bc-4216-932b-bc98a6d9b970)
