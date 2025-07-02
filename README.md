@@ -9,7 +9,7 @@ Yagel Kaniel – 216125815
 
 ---
 
-## תוכן עניינים
+# תוכן עניינים
 
 1. [תיאור המערכת](#תיאור-המערכת)  
 2. [מטרת המערכת](#מטרת-המערכת)  
@@ -79,7 +79,7 @@ Yagel Kaniel – 216125815
 
 ---
 
-## שאילתות DELETE
+### שאילתות DELETE
 
 1. מחיקת הנחות שפג תוקפן ולא נעשה בהן שימוש:  
    ![image](https://github.com/user-attachments/assets/2ede949b-292a-41a9-ae1a-8a438f64556b)  
@@ -90,7 +90,7 @@ Yagel Kaniel – 216125815
 
 ---
 
-## שאילתות UPDATE
+### שאילתות UPDATE
 
 1. עדכון סכום תשלום לפי אחוז הנחה:  
    ![image](https://github.com/user-attachments/assets/12b664fa-e586-4f0d-a76d-d731d4a8fec9)  
@@ -101,7 +101,7 @@ Yagel Kaniel – 216125815
 
 ---
 
-## שאילתות SELECT
+### שאילתות SELECT
 
 1. סכומי תשלומים חודשיים מדורגים לפי גובה הכנסות:  
    ![image](https://github.com/user-attachments/assets/bce46179-c9e4-4289-b61f-fbc0a2c71264)  
